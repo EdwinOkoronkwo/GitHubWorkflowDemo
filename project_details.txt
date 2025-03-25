@@ -1,5 +1,2 @@
 Project Name: GitHub Workflow Demo
-Description: A repository to practice GitHub workflows process.
-I also improved the formatting so its pretty.
-
-Added user authentication feature.
+Description: A repository to practice GitHub workflows.
