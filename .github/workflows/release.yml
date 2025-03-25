@@ -28,7 +28,7 @@ jobs:
         run: ./gradlew test
 
       - name: Upload Release Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact
         with:
           name: my-project-v1.0.0-jar
           path: build/libs/*.jar
