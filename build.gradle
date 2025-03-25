@@ -1,0 +1,24 @@
+plugins {
+    id 'java'           // Java plugin for compiling Java code
+    id 'application'    // To define the main class for running the application
+}
+
+repositories {
+    mavenCentral()      // Use Maven Central for dependency resolution
+}
+
+dependencies {
+    // Add any dependencies your project requires here.
+    // For example, for testing with JUnit:
+    // testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    // testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+application {
+    mainClass = 'Main'   // Set the main class of your application (replace with actual package name if applicable)
+}
+
+task createJar(type: Jar) {
+    archiveBaseName = 'github-workflow-demo'
+    from sourceSets.main.output
+}
